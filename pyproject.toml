@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "vercel-poetry"
+version = "0.1.0"
+description = ""
+authors = ["Jin < >"]
+readme = "README.md"
+packages = [
+  {include = "api"},
+  {include = "common"}
+]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.9.7 || >3.9.7,<3.10"
+fastapi = {extras = ["all"], version = "^0.95.2"}
+gunicorn = "^20.1.0"
+pydantic = "^1.10.7"
+uvicorn = {extras = ["standard"], version = "^0.22.0"}
+
+
+[tool.poetry.group.dev.dependencies]
+poethepoet = "^0.20.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
