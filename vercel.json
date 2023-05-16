@@ -3,7 +3,7 @@
   "builds": [
       {
           "src": "api/main.py",
-          "use": "@almapario/vercel-poetry"
+          "use": "vercel-scripts/build"
       }
   ],
   "routes": [
