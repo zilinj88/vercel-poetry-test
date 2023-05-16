@@ -1,16 +1,15 @@
 {
-  "installCommand": "(curl -sSL https://install.python-poetry.org | python3 -) && /vercel/.local/bin/poetry export -f requirements.txt --output requirements.txt && pip install -r requirements.txt",
   "version": 2,
-    "builds": [
-        {
-            "src": "api/main.py",
-            "use": "@vercel/python"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "api/main.py"
-        }
-    ]
+  "builds": [
+      {
+          "src": "api/main.py",
+          "use": "@almapario/vercel-poetry"
+      }
+  ],
+  "routes": [
+      {
+          "src": "/(.*)",
+          "dest": "api/main.py"
+      }
+  ]
 }
