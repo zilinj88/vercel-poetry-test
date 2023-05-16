@@ -1,5 +1,5 @@
 {
-  "installCommand": "(curl -sSL https://install.python-poetry.org | python3 -) && /vercel/.local/bin/poetry export -f requirements.txt --output requirements.txt && pip3 install -r requirements.txt",
+  "installCommand": "(curl -sSL https://install.python-poetry.org | python3 -) && /vercel/.local/bin/poetry export -f requirements.txt --output requirements.txt && pip install -r requirements.txt",
   "version": 2,
     "builds": [
         {
