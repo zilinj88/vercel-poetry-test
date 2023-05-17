@@ -3,7 +3,7 @@
   "builds": [
       {
           "src": "api/main.py",
-          "use": "@devjin8/vercel-poetry@1.0.8"
+          "use": "@devjin8/vercel-poetry@1.0.9"
       }
   ],
   "routes": [
