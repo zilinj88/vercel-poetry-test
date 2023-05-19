@@ -3,7 +3,10 @@
   "builds": [
       {
           "src": "api/main.py",
-          "use": "@devjin8/vercel-poetry@1.2.0"
+          "use": "@devjin8/vercel-poetry@1.2.0",
+          "config": {
+            "buildCommand": "-m spacy download en_core_web_sm"
+          }
       }
   ],
   "routes": [
